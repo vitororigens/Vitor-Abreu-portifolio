@@ -192,12 +192,14 @@
     width: 100vw;
     max-height: 800px;
     max-width: 1280px;
-    min-height: 600px;
-    min-width: 1000px;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content:center;
     margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -259,8 +261,14 @@ h2{
     justify-content: space-around;
 }
 
+.icons a{
+    color: #000000;
+    text-decoration: none;
+}
+
 .text-information{
     text-align:center;
     height:300px;
     width:600px;
+    position: relative;
 }
