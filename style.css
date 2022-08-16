@@ -189,7 +189,7 @@
 
 #about{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     max-height: 800px;
     max-width: 1280px;
     display: flex;
@@ -271,4 +271,57 @@ h2{
     height:300px;
     width:600px;
     position: relative;
+}
+
+
+.rodape{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #345ea8;
+    color:#ffffff;
+    height: 80px;
+    justify-content: space-around;
+}
+
+.socialicons{
+    display: flex; 
+
+
+}
+
+.socialicons .icon{
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0 30px; 
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.socialicons a::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    z-index: -1;
+
+    background: linear-gradient(to bottom, #8a2387, #e94057, #f27121);
+}
+
+.socialicons .icon:hover{
+    color: #fff;
+
+}
+
+.socialicons a:hover::after{
+    bottom: 0;
 }
